@@ -13,6 +13,7 @@ COMMON_MIME_MAPS = {
     "text/json": ".json",
     "application/json": ".json",
     "text/css": ".css",
+    "text/xml": ".xml",
 }
 
 
