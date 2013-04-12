@@ -1,8 +1,4 @@
-from setuptools import setup, find_packages
-
-install_requires = [
-    'django',
-]
+from distutils.core import setup
 
 version = __import__('django_medusa').get_version()
 
@@ -13,8 +9,8 @@ setup(name='django-medusa',
     author_email='mike@tig.as', # update this as needed
     url='https://github.com/mtigas/django-medusa/',
     download_url='https://github.com/mtigas/django-medusa/downloads',
-    packages=find_packages(),
-    install_requires=install_requires,
+    packages=['django_medusa'],
+    install_requires=['django'],
     license='MIT',
     keywords='django static staticwebsite staticgenerator publishing',
     classifiers=["Development Status :: 3 - Alpha",
